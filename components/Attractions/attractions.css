@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    height: 10%;
+    width: 100%;
+}
+
+
+.page-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.theme-container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#theme-header {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.theme {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.theme:hover {
+    filter: grayscale(0%);
+    opacity: 0.9;
+}
+
+.theme-title {
+    font-size: 24px;
+    font-weight: bold;
+}
