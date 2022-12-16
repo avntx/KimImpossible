@@ -1,4 +1,10 @@
-* {
+* 
+
+body {
+    background-color: black;
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,17 +22,17 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 60%;
-    color: black;
+    color: white;
 }
 
 .navbar-link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 #navbar-button {
     padding: 10px;
-    background-color: orange;
+    background-color: rgb(112, 212, 35);
     border-radius: 4px;
 }
 
@@ -51,9 +57,12 @@
     font-size: 22px;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    color: white;
 }
 
 .content-InnerContainer {
+    border: 100px;
+    border-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -64,6 +73,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    color: white;
 }
 
 .content-title {
@@ -71,6 +81,7 @@
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 1rem;
+    color: white;
 }
 
 
@@ -84,6 +95,7 @@
     text-align: justify;
     margin-top: 0.8rem;
     margin-bottom: 0.6rem;
+    color: white;
 }
 
 .learnMore-button {
@@ -92,13 +104,13 @@
     font-size: 14px;
     margin-top: 0.4rem;
     margin-bottom: 100px;
-    color: black;
+    color: white;
     height: 25px;
 }
 
 .learnMore-button:hover {
     border-bottom: 2px solid;
-    border-color: grey;
+    border-color: rgb(112, 212, 35);
     width: 95px;
 }
 
@@ -112,6 +124,7 @@
     text-align: center;
     margin-bottom: 5rem;
     margin-top: 0.5rem;
+    color: white;
 }
 
 .question-div {
@@ -121,7 +134,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 2px solid;
-    border-color: grey;
+    border-color: rgb(112, 212, 35);
     margin-bottom: 1.5rem;
 }
 
@@ -135,7 +148,7 @@
     justify-content: center;
     width: 100%;
     height: 150px;
-    background-color: grey;
+    background-color: rgb(112, 212, 35);
     text-align: center;
 }
 
@@ -147,4 +160,47 @@
     border-radius: 5px;
     margin: auto;
     margin-top: 1rem;
+    color: rgb(112, 212, 35);
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
