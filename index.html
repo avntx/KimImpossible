@@ -9,11 +9,14 @@
 </head>
 <body>
     <div id="container">
-        <div id="navbar">
-            <a class="navbar-link" href='./index.html'>Home</a>
-            <a class="navbar-link" href='./components/Attractions/attractions.html'>Attractions</a>
-            <a class="navbar-link" href='./components/ContactUs/contactUs.html'>Contact Us</a>
-            <a class="navbar-link" href="./components/BookNow/bookNow.html" id="navbar-button">Book Now</a>
+
+        <div class="navbar_container">
+            <div id="navbar">
+                <a class="navbar-link" href='./index.html'>Home</a>
+                <a class="navbar-link" href='./components/Attractions/attractions.html'>Attractions</a>
+                <a class="navbar-link" href='./components/ContactUs/contactUs.html'>Contact Us</a>
+                <a class="navbar-link" href="./components/BookNow/bookNow.html" id="navbar-button">Book Now</a>
+            </div>
         </div>
 
 
@@ -50,21 +53,42 @@
             </div>
         </div>
 
+        <!-- This is the FAQ section -->
+
         <div id="FAQ">
-            <p class="header">FAQs</p>
-            <div class="question-div">
-                <p class="question">Where can I purchase the express pass?</p>
+            <p class="header" style="margin-bottom: 0rem;">FAQs</p>
+
+            <div class="individual_section">
+                <div class="question_div" id="questionSelector">
+                    <p class="question">Where can I purchase the express pass?</p>
+                </div>
+
+                <div class="answer_div" id="answerDiv">
+                    <p>This is my answer area!</p>
+                </div>
             </div>
-            <div class="question-div">
+
+
+
+            <div class="question_div">
                 <p class="question">Am I allowed to bring pets into the park?</p>
             </div>
-            <div class="question-div">
+            <div class="question_div">
                 <p class="question">What is the operating hours?</p>
             </div>
-            <div class="question-div">
+            <div class="question_div">
                 <p class="question">Is there a specific dress code to enter the park?</p>
             </div>
-            <p id="FAQ-button">Show More</p>
+
+            <div id="showMore_content">
+                <div class="question_div">
+                    <p class="question">Am I allowed to bring pets into the park?</p>
+                </div>
+                <div class="question_div">
+                    <p class="question">What is the operating hours?</p>
+                </div>
+            </div>
+            <p id="FAQ_button">Show More</p>
         </div>
 
 
