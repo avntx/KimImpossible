@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"/>
+    <script src="https://kit.fontawesome.com/7fc7895a6d.js" crossorigin="anonymous"></script>
     <title>Kim Impossible | Home</title>
 </head>
 
@@ -13,48 +14,70 @@
 
     <div id="container">
 
+
         <div class="navbar_container">
-            <div id="navbar">
-                <a class="navbar-link" href='./index.html'>Home</a>
-                <a class="navbar-link" href='./components/Attractions/attractions.html'>Attractions</a>
-                <a class="navbar-link" href='./components/ContactUs/contactUs.html'>Contact Us</a>
-                <a class="navbar-link" href="./components/BookNow/bookNow.html" id="navbar-button">Book Now</a>
+            <!-- Logo -->
+            <div class="logo_div">
+                <img class="web_logo" src="assets/main_logo.png" alt="Logo"/>
+            </div>
+
+            <!-- Navbar links -->
+            <div class="navbar_links">
+                <a href="index.html" style="text-decoration: none; color: white;">Home</a>
+                <a href="components/Attractions/attractions.html" style="text-decoration: none; color: white;">Attractions</a>
+                <a href="components/ContactUs/contactUs.html" style="text-decoration: none; color: white;">Contact Us</a>
+                <a href="#" id="bookNow_btn" style="text-decoration: none; color: black; font-weight: bold;">Book Now</a>
             </div>
         </div>
 
 
+        <div id="bgImage_container">
+            <img id="main_bgImage" src="assets/front_page.jpg" alt="Theme Park"/>
+            <img id="bgImage_logo" src="assets/fp_logo.png" alt="BG Image Logo"/>
+        </div>
 
-        <div class="container">
-            <img src="assets/front_page.jpg" alt="Theme Park" style="width:100%;">
-            <div class="centered"><img src="assets/fp_logo.png" width="100%" height="100%"></div>
-          </div>
 
+        <div style="margin-bottom: 5rem;">
+            <p class="header">Featured Rides</p>
 
-        <div class="content-OuterContainer">
-            <p class="header">Themed zones</p>
-
-            <div class="content-InnerContainer">
-                <div class="content">
-                    <p class="content-title">Sacred Land</p>
-                    <img class="theme-image" src="assets/sacred_land.jpeg"/>
-                    <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                    <div class="learnMore-button">
-                        <a style="text-decoration: none; color: black;" href="#">Learn More</a>
+            <!-- Popular rides section -->
+            <div class="content_container">
+                <div class="individual_section">
+                    <p class="section_title">Bunny Coaster</p>
+                    <img class="ride_image" src="./assets/rollerCoaster.jpg"/>
+                    <p class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <div class="readMore_container">
+                        <a href="#" class="readMore_btn">Read More</a>
+                        <i class="fa-solid fa-angle-right icon"></i>
                     </div>
                 </div>
 
-                <div class="content">
-                    <p class="content-title">Underworld</p>
-                    <img class="theme-image" src="assets/underworld.jpeg"/>
-                    <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                <div class="individual_section">
+                    <p class="section_title">Bunny Coaster</p>
+                    <img class="ride_image" src="./assets/rollerCoaster.jpg"/>
+                    <p class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <div class="readMore_container">
+                        <a href="#" class="readMore_btn">Read More</a>
+                        <i class="fa-solid fa-angle-right icon"></i>
+                    </div>
+                </div>
 
-                    <div class="learnMore-button">
-                        <a style="text-decoration: none; color: black;" href="#">Learn More</a>
+                <div class="individual_section">
+                    <p class="section_title">Bunny Coaster</p>
+                    <img class="ride_image" src="./assets/rollerCoaster.jpg"/>
+                    <p class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <div class="readMore_container">
+                        <a href="#" class="readMore_btn">Read More</a>
+                        <i class="fa-solid fa-angle-right icon"></i>
                     </div>
                 </div>
             </div>
@@ -62,40 +85,63 @@
 
         <!-- This is the FAQ section -->
 
-        <div id="FAQ">
-            <p class="header" style="margin-bottom: 0rem;">FAQs</p>
+        <div>
+            <p class="header" style="margin-bottom: 1.5rem;">FAQs</p>
 
-            <div class="individual_section">
-                <div class="question_div" id="questionSelector">
-                    <p class="question">Where can I purchase the express pass?</p>
+            <div class="FAQ_section">
+                <div class="question_div" id="questionSelector1">
+                    <p class="question" style="padding-left: 10px;">Where can I purchase the express pass?</p>
+                    <i class="fa-solid fa-angle-down" style="padding-right: 10px;"></i>
                 </div>
 
-                <div class="answer_div" id="answerDiv">
+                <div class="answer_div" id="answerDiv1">
+                    <p>This is my anser area!</p>
+                </div>
+            </div>
+
+            <div class="FAQ_section">
+                <div class="question_div" id="questionSelector2">
+                    <p class="question" style="padding-left: 10px;">Am I allowed to bring pets into the park?</p>
+                    <i class="fa-solid fa-angle-down" style="padding-right: 10px;"></i>
+                </div>
+
+                <div class="answer_div" id="answerDiv2">
+                    <p>This is my answer area!</p>
+                </div>
+            </div>
+
+            <div class="FAQ_section">
+                <div class="question_div" id="questionSelector3">
+                    <p class="question" style="padding-left: 10px;">What is the operating hours?</p>
+                    <i class="fa-solid fa-angle-down" style="padding-right: 10px;"></i>
+                </div>
+
+                <div class="answer_div" id="answerDiv3">
+                    <p>This is my answer area!</p>
+                </div>
+            </div>
+
+            <div class="FAQ_section">
+                <div class="question_div" id="questionSelector4">
+                    <p class="question" style="padding-left: 10px;">Is there a specific dress code to enter the park?</p>
+                    <i class="fa-solid fa-angle-down" style="padding-right: 10px;"></i>
+                </div>
+
+                <div class="answer_div" id="answerDiv4">
                     <p>This is my answer area!</p>
                 </div>
             </div>
 
 
-
-            <div class="question_div">
-                <p class="question">Am I allowed to bring pets into the park?</p>
-            </div>
-            <div class="question_div">
-                <p class="question">What is the operating hours?</p>
-            </div>
-            <div class="question_div">
-                <p class="question">Is there a specific dress code to enter the park?</p>
-            </div>
-
-            <div id="showMore_content">
+            <div id="showMore_content" class="FAQ_section">
                 <div class="question_div">
-                    <p class="question">Am I allowed to bring pets into the park?</p>
+                    <p class="question" style="padding-left: 10px;">Am I allowed to bring pets into the park?</p>
                 </div>
                 <div class="question_div">
-                    <p class="question">What is the operating hours?</p>
+                    <p class="question" style="padding-left: 10px;">What is the operating hours?</p>
                 </div>
             </div>
-            <p id="FAQ_button">Show More</p>
+            <p id="FAQ_showMoreBtn">Show More</p>
         </div>
 
 
