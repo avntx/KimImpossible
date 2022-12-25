@@ -1,17 +1,11 @@
 body {
     background-color: black;
-    color: white;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
-}
-
-#container {
-    width: 100%;
 }
 
 .navbar_container {
@@ -53,57 +47,74 @@ body {
     text-align: center;
     color: white;
   }
-  
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  /* Bottom right text */
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  /* Centered text */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
+  section{
+    padding: 40px, 15%;
+}
 
-.map {
-    width:100%;
+.contact{
+    background: black;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: (2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-form h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+span{
+    color: rgb(112, 212, 35);
+}
+
+.contact-form p{
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container-form form{
+    position: relative;
+}
+
+.contact-form form input,
+form textarea{
+    width: 70%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    margin-left: 15%
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+  
+.mapContainer {
+    width: 70%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-
-h1{
-    color: white;
-    text-align: center;
+    margin-left: 15%
 }
 
 iframe {
@@ -112,46 +123,15 @@ iframe {
     filter: invert(100%);
 }
 
-
-.contentContainer {
+#footer {
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(112, 212, 35);
+    text-align: center;
+    margin-top: 5rem;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 1440px;
-    margin-top: 2rem;
-}
 
-.leftContainer {
-    width: 50%;
-    margin: auto;
-    margin-left: 12%;
-    padding-bottom: 12%;
-}
-
-.btnContainer {
-    width: 45%;
-    display: flex;
-    flex-directioN: row;
-    margin-top: 1.2rem;
-    justify-content: space-between;
-}
-
-.btn {
-    padding: 8px;
-    background-color: red;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.mapContainer {
-    width: 50%;
-}
