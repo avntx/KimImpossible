@@ -78,40 +78,7 @@ const showMoreQuestionHandler = () => {
 showMoreButton.addEventListener('click', showMoreQuestionHandler)
 console.log('test')
 
-// Initialize and add the map
-function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.031 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
-  
-  window.initMap = initMap;
 
-  $(window).on("load",function() {
-    $(window).scroll(function() {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $(".fade").each(function() {
-        /* Check the location of each desired element */
-        var objectBottom = $(this).offset().top + $(this).outerHeight();
-        
-        /* If the element is completely within bounds of the window, fade it in */
-        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-        } else { //object goes out of view (scrolling up)
-          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-        }
-      });
-    }).scroll(); //invoke scroll-handler on page-load
-  });
 
   let bookNow_btn = document.getElementById('bookNow_btn')
   let modalContainer = document.getElementById('modalContainer')
@@ -217,7 +184,6 @@ function initMap() {
   
   
   window.onload = function() {
-  document.getElementById('adult_counter').innerHTML = adult_counter;
-  document.getElementById('children_counter').innerHTML = children_counter;
-  
+    document.getElementById('adult_counter').innerHTML = adult_counter;
+    document.getElementById('children_counter').innerHTML = children_counter;
   }
