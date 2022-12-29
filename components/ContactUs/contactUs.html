@@ -40,16 +40,24 @@
                         <input type="date" required>
                     </form>
 
-                    <div>
-                        <p>Number of Tickets</p>
+                    <p>Number of Tickets</p>
 
-                        <div>
+                    <div class="ticketSelector">
+                        <div class="counterContainer">
                             <p >Adult</p>
                             <div class="ticket_counter">
-                                <!-- <i class="fa-solid fa-angle-left" id="adult_increase"></i> -->
-                                <p onclick="plusAdultHandler()">Increase</p>
+                                <i class="fa-solid fa-angle-left" onclick="minusAdultHandler()"></i>
                                 <p id="adult_counter"></p>
-                                <p onclick="minusAdultHandler()">Decrease</p>
+                                <i class="fa-solid fa-angle-right" onclick="plusAdultHandler()"></i>
+                            </div>
+                        </div>
+
+                        <div class="counterContainer">
+                            <p>Children</p>
+                            <div class="ticket_counter">
+                                <i class="fa-solid fa-angle-left" onclick="minusChildHandler()"></i>
+                                <p id="children_counter"></p>
+                                <i class="fa-solid fa-angle-right" onclick="plusChildHandler()"></i>
                             </div>
                         </div>
                     </div>
@@ -58,6 +66,35 @@
 
             <!-- Calculator -->
 
+                <div class="calculatorContainer">
+                    <p style="text-align: center;">Price</p>
+
+                    <!-- Header -->
+                    <div class="calculatorHeader">
+                        <p>Ticket Type :</p>
+                        <p>Quantity :</p>
+                        <p>Price :</p>
+                    </div>
+                    <!-- Adult section -->
+                    <div class="ticketSection">
+                        <p id="adultType"></p>
+                        <p id="adultTix_num"></p>
+                        <p id="adultTix_price"></p>
+                    </div>
+
+                    <!-- Children ticket price section -->
+                    <div class="ticketSection">
+                        <p id="childType"></p>
+                        <p id="childTix_num"></p>
+                        <p id="childTix_price"></p>
+                    </div>
+
+                    <!-- Total price section -->
+                    <div class="totalPrice_section">
+                        <p>Grand Total :</p>
+                        <p id="tixTotalPrice"></p>
+                    </div>
+                </div>
 
             </div>
             <!-- Name, email, contact number -->
