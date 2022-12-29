@@ -58,6 +58,9 @@ body {
 
 #modal_btn {
     color: white;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 20px;
 }
 
 
@@ -68,13 +71,51 @@ body {
     width: 90%;
     margin: 1px auto;
     color: white;
+    margin-top: 0.8rem;
+    font-size: 18px;
 }
 
 .input_section {
     width: 45%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .input_section form {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 131px;
+}
+
+.input_section form input {
+    border: none;
+    outline: none;
+    background-color: #3b3b3bbf;
+    height: 40px;
+    border-radius: 5px;
+    color: rgb(180, 180, 180);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+
+
+
+.ticketSelectorContainer {
     display: flex;
     flex-direction: column;
 }
@@ -82,45 +123,74 @@ body {
 .ticketSelector {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 65%;
     justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .counterContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 18px;
 }
 
 .ticket_counter {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 0.4rem;
+}
+
+.ticketClicker {
+    padding: 6px;
+    border-radius: 2px;
+    background-color: orange;
+}
+
+#adult_counter {
+    font-size: 18px;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+#children_counter {
+    font-size: 18px;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
 }
 
 .calculatorContainer {
     width: 50%;
-    background-color: grey;
+    height: 50vh;
+    background-color: #3b3b3bbf;
     border-radius: 10px;
 }
 
 .calculatorHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 0.6rem;
 }
 
 .ticketSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 20px;
 }
 
 .totalPrice_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20px;
+    align-items: center;
+    margin-top: 60%;
+    padding-top: 5%;
+    border-top: 2px solid black;
 }
 
 
@@ -159,52 +229,33 @@ body {
     justify-content: space-between;
     margin: auto;
     margin-top: 2rem;
-    width: 75%; 
+    width: 70%; 
 }
 
 .contact_form {
     width: 45%;
 }
 
-.contact_form h1{
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
-    text-align: center;
+.contact_form form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 52vh;
 }
 
-span{
-    color: orange;
-}
-
-.contact_form p{
-    color: #c6c9d8bf;
-    letter-spacing: 0.4px;
-    line-height: 26px;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contact_form form input,
-form textarea{
-    width: 85%;
-    height: 40px;
+.contact_form form * {
+    background-color: rgb(34, 34, 34);
     border: none;
-    outline: none;
-    background: rgb(34, 34, 34);
-    color: #fff;
-    font-size: 1.1rem;
-    margin-bottom: 0.7rem;
-    border-radius: 10px;
-    padding-left: 15px;
-    margin-left: 15%;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
-.contact_form textarea{
-    resize: none;
+.contact_form form textarea {
     height: 150px;
-    padding-top: 10px;
 }
 
   
@@ -220,7 +271,7 @@ form textarea{
 
 iframe {
     width: 100%;
-    height: 500px;
+    height: 480px;
     filter: invert(100%);
 }
 

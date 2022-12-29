@@ -9,6 +9,79 @@
     <title>Kim Impossible | Home</title>
 </head>
 <body>
+    <div class="modal_container" id="modalContainer">
+        <p id="modal_btn"><i class="fa-solid fa-xmark"></i></p>
+
+        <!-- Input Content -->
+        <div class="content_container">
+            <div class="input_section">
+                <form action="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="" placeholder="Phone Number" required>
+                    <input type="date" required>
+                </form>
+
+
+                <div class="ticketSelectorContainer">
+                    <p>Number of Tickets</p>
+                    <div class="ticketSelector">
+                        <div class="counterContainer">
+                            <p>Adult</p>
+                            <div class="ticket_counter">
+                                <i class="fa-solid fa-angle-left ticketClicker" onclick="minusAdultHandler()"></i>
+                                <p id="adult_counter"></p>
+                                <i class="fa-solid fa-angle-right ticketClicker" onclick="plusAdultHandler()"></i>
+                            </div>
+                        </div>
+
+                        <div class="counterContainer">
+                            <p>Children</p>
+                            <div class="ticket_counter">
+                                <i class="fa-solid fa-angle-left ticketClicker" onclick="minusChildHandler()"></i>
+                                <p id="children_counters"></p>
+                                <i class="fa-solid fa-angle-right ticketClicker" onclick="plusChildHandler()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px;">No extra charges for Weekends or Public Holidays</p>
+                </div>
+
+            </div>
+
+            <!-- Calculator -->
+
+            <div class="calculatorContainer">
+                <p style="text-align: center; margin-top: 0.4rem;">Price</p>
+
+                <!-- Header -->
+                <div class="calculatorHeader">
+                    <p>Ticket Type :</p>
+                    <p>Quantity :</p>
+                    <p>Price :</p>
+                </div>
+                <!-- Adult section -->
+                <div class="ticketSection">
+                    <p id="adultType"></p>
+                    <p id="adultTix_num"></p>
+                    <p id="adultTix_price"></p>
+                </div>
+
+                <!-- Children ticket price section -->
+                <div class="ticketSection">
+                    <p id="childType"></p>
+                    <p id="childTix_num"></p>
+                    <p id="childTix_price"></p>
+                </div>
+
+                <!-- Total price section -->
+                <div class="totalPrice_section">
+                    <p style="padding-left: 22px;">Grand Total :</p>
+                    <p id="tixTotalPrice"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div id="container">
 

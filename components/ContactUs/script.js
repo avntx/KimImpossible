@@ -1,13 +1,16 @@
 let bookNow_btn = document.getElementById('bookNow_btn')
 let modalContainer = document.getElementById('modalContainer')
 let closeModalBtn = document.getElementById('modal_btn')
+let page = document.getElementById('container')
 
 const displayModal = () => {
     modalContainer.style.display = 'flex'
+    page.style.opacity = '0.2'
 }
 
 const closeModal = () => {
     modalContainer.style.display = 'None'
+    page.style.opacity = '1'
 }
 
 bookNow_btn.addEventListener('click', displayModal)
@@ -56,6 +59,10 @@ const minusAdultHandler = () => {
         document.getElementById('adult_counter').innerHTML = adult_counter
         document.getElementById('adultTix_num').innerHTML = ''
         document.getElementById('adultTix_price').innerHTML = ''
+
+        if (adult_counter <= 0 & children_counter <= 0) {
+            document.getElementById('tixTotalPrice').innerHTML = ''
+        }
     }
 }
 
@@ -86,11 +93,14 @@ const minusChildHandler = () => {
         document.getElementById('childType').innerHTML = ''
         document.getElementById('childTix_num').innerHTML = ''
         document.getElementById('childTix_price').innerHTML = ''
+
+        if (adult_counter <= 0 & children_counter <= 0) {
+            document.getElementById('tixTotalPrice').innerHTML = ''
+        }
     }
 }
 
-// plusAdultTicket.addEventListener('click', plusAdultHandler)
-// minusAdultTicket.addEventListener('click', minusAdultHandler)
+
 window.onload = function() {
 document.getElementById('adult_counter').innerHTML = adult_counter;
 document.getElementById('children_counter').innerHTML = children_counter;
