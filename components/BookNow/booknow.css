@@ -1,0 +1,261 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+
+/* !! General Styling !! */
+body {
+  background-color: black;
+  color: white;
+  font-family: Rubik, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#container {
+  width: 100%;
+}
+
+
+/* == Top nav == */
+.navbar_container {
+  width: 65%;
+  max-width: 1450px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  align-items: center;
+
+  /* background-color: blue; */
+}
+
+.logo_div {
+  width: 20%;
+}
+
+.web_logo {
+  width: 100%;
+  height: 50px;
+}
+
+.navbar_links {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookNow_btn {
+  padding: 12px;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+
+/* == Hero Section == */
+.hero {
+  /* <Picture background> */
+  background: linear-gradient(180deg, rgba(245,208,32,0) 50%, rgba(0,0,0,1) 100%), url("../../assets/bookNow-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  /* gap between title group and quick links */
+  gap: 8rem;
+}
+
+.hero > * {
+  /* center all immediate child in hero section */
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+  /* <Title group> */
+.title-group {
+  margin-top: 15rem;
+}
+
+.hero h1 {
+  /* BIG Heading */
+  /* I want the black background to have some padding */
+  /* But in all direction & will interact with other elements */
+  /* Take a look if there's time */
+  display: inline;
+
+  font-weight: 900;
+  font-size: 4rem;
+  background-color: #000;
+}
+
+.title-group a {
+  /* "Learn More" button */
+  /* Manually tweaking parameters to center the button text */
+  /* Is there a better way? */
+  display: block;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3em;
+  color: black;
+  text-align: center;
+
+  background-color: orange;
+  width: 9em;
+  height: 2.2em;
+}
+
+
+  /* <Quick Links> */
+.quick-links {
+  /* container */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.quick-links a {
+  /* General link block styling */
+  display: block;
+  height: 6rem;
+  padding: 0 .5rem;
+
+  /* theoretical width of individual link block */
+  flex-basis: 285px;
+  flex-grow: 1;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 6rem;
+  color: white;
+}
+
+.quick-links i:nth-child(1) {
+  /* Unique icon at the front */
+  display: inline-block;
+  padding: 0 1rem;
+
+  color: orange;
+  font-size: 1.5em;
+  vertical-align: middle;
+  transform: rotate(-30deg);
+}
+
+.quick-links i:nth-child(2) {
+  /* Arrow icon at the end */
+  display: inline-block;
+  padding: 0 .5rem;
+
+  color: white;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+/* == Purchase Options Section == */
+.location-list {
+  /* container */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+
+  margin: 4rem auto;
+  width: 75%;
+}
+
+.location-list li {
+  /* individual cards */
+  width: min(18rem, 100%);
+  height: 26rem;
+  position: relative;
+
+  border-radius: 1rem;
+  background: no-repeat center/cover url("../../assets/bookNow-card1.jpg");
+
+  box-shadow: 0 10px 5px -5px rgba(255, 166, 0, 0.5);
+}
+
+.location-list .image-cover {
+  /* image-cover layer that turns down image brightness */
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.location-list .text-layer {
+  /* text layer/container on the card */
+  position: absolute;
+  height: 100%;
+  padding: 0 .5rem;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.location-list .text-layer h3 {
+  /* Park name text */
+  margin-top: auto;
+  font-size: 2.5rem;
+}
+
+.location-list .text-layer p:nth-child(2) {
+  /* Park category text */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.location-list .text-layer p:nth-child(3) {
+  /* Park desc text */
+  margin-bottom: 1rem;
+}
+
+.location-list .text-layer a {
+  /* Explore button */
+  display: block;
+  height: 3rem;
+  line-height: 2.5rem;
+  margin-bottom: .6rem;
+  
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: .5rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* == Footer == */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(112, 212, 35);
+  text-align: center;
+  margin-top: 5rem;
+}
