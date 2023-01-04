@@ -190,10 +190,60 @@
 
 
 
-let item1 = document.getElementById('cat1')
+let cat1 = document.getElementById('cat1')
+let cat2 = document.getElementById('cat2')
+let cat3 = document.getElementById('cat3')
+let cat4 = document.getElementById('cat4')
 
-const styleHandler = () => {
-    item1.style.borderTop = '1px solid black'
+const selectCat1 = () => {
+    cat2.style.border = 'none'
+    cat2.style.color = 'black'
+    cat3.style.border = 'none'
+    cat3.style.color = 'black'
+    cat4.style.border = 'none'
+    cat4.style.color = 'black'
+    cat1.style.borderBottom = '2px solid rgb(187, 121, 0)'
+    cat1.style.color = 'rgb(187, 121, 0)'
 }
 
-item1.addEventListener('click', styleHandler)
+cat1.addEventListener('click', selectCat1)
+
+
+const selectCat2 = () => {
+    cat1.style.border = 'none'
+    cat1.style.color = 'black'
+    cat3.style.border = 'none'
+    cat3.style.color = 'black'
+    cat4.style.border = 'none'
+    cat4.style.color = 'black'
+    cat2.style.borderBottom = '2px solid rgb(187, 121, 0)'
+    cat2.style.color = 'rgb(187, 121, 0)'
+}
+
+cat2.addEventListener('click', selectCat2)
+
+const selectCat3 = () => {
+    cat1.style.border = 'none'
+    cat1.style.color = 'black'
+    cat2.style.border = 'none'
+    cat2.style.color = 'black'
+    cat4.style.border = 'none'
+    cat4.style.color = 'black'
+    cat3.style.borderBottom = '2px solid rgb(187, 121, 0)'
+    cat3.style.color = 'rgb(187, 121, 0)'
+}
+
+cat3.addEventListener('click', selectCat3)
+
+const selectCat4 = () => {
+    cat1.style.border = 'none'
+    cat1.style.color = 'black'
+    cat2.style.border = 'none'
+    cat2.style.color = 'black'
+    cat3.style.border = 'none'
+    cat3.style.color = 'black'
+    cat4.style.borderBottom = '2px solid rgb(187, 121, 0)'
+    cat4.style.color = 'rgb(187, 121, 0)'
+}
+
+cat4.addEventListener('click', selectCat4)
