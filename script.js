@@ -1,82 +1,81 @@
-let questionSelector = document.getElementById('questionSelector1');
-let answerDiv = document.getElementById('answerDiv1');
-answerDiv.style.display = 'none'
+// let questionSelector = document.getElementById('questionSelector1');
+// let answerDiv = document.getElementById('answerDiv1');
+// answerDiv.style.display = 'none'
 
-const revealAnswerHandler = () => {
+// const revealAnswerHandler = () => {
 
-    if (answerDiv.style.display == 'none') {
-        answerDiv.style.display = 'flex';
-    } else {
-        answerDiv.style.display = 'none';
-    }
-}
+//     if (answerDiv.style.display == 'none') {
+//         answerDiv.style.display = 'flex';
+//     } else {
+//         answerDiv.style.display = 'none';
+//     }
+// }
 
-questionSelector.addEventListener('click', revealAnswerHandler)
-
-
-let questionSelector2 = document.getElementById('questionSelector2');
-let answerDiv2 = document.getElementById('answerDiv2');
-answerDiv2.style.display = 'none'
-
-const revealAnswerHandler2 = () => {
-
-    if (answerDiv2.style.display == 'none') {
-        answerDiv2.style.display = 'flex';
-    } else {
-        answerDiv2.style.display = 'none';
-    }
-}
-
-questionSelector2.addEventListener('click', revealAnswerHandler2)
+// questionSelector.addEventListener('click', revealAnswerHandler)
 
 
-let questionSelector3 = document.getElementById('questionSelector3');
-let answerDiv3 = document.getElementById('answerDiv3');
-answerDiv3.style.display = 'none'
+// let questionSelector2 = document.getElementById('questionSelector2');
+// let answerDiv2 = document.getElementById('answerDiv2');
+// answerDiv2.style.display = 'none'
 
-const revealAnswerHandler3 = () => {
+// const revealAnswerHandler2 = () => {
 
-    if (answerDiv3.style.display == 'none') {
-        answerDiv3.style.display = 'flex';
-    } else {
-        answerDiv3.style.display = 'none';
-    }
-}
+//     if (answerDiv2.style.display == 'none') {
+//         answerDiv2.style.display = 'flex';
+//     } else {
+//         answerDiv2.style.display = 'none';
+//     }
+// }
 
-questionSelector3.addEventListener('click', revealAnswerHandler3)
-
-
-let questionSelector4 = document.getElementById('questionSelector4');
-let answerDiv4 = document.getElementById('answerDiv4');
-answerDiv4.style.display = 'none'
-
-const revealAnswerHandler4 = () => {
-
-    if (answerDiv4.style.display == 'none') {
-        answerDiv4.style.display = 'flex';
-    } else {
-        answerDiv4.style.display = 'none';
-    }
-}
-
-questionSelector4.addEventListener('click', revealAnswerHandler4)
+// questionSelector2.addEventListener('click', revealAnswerHandler2)
 
 
+// let questionSelector3 = document.getElementById('questionSelector3');
+// let answerDiv3 = document.getElementById('answerDiv3');
+// answerDiv3.style.display = 'none'
 
-let showMoreButton = document.getElementById('FAQ_showMoreBtn')
-let showMoreContent = document.getElementById('showMore_content')
-showMoreContent.style.display ='none'
+// const revealAnswerHandler3 = () => {
 
-const showMoreQuestionHandler = () => {
-    if (showMoreContent.style.display == 'none') {
-        showMoreContent.style.display = 'block'
-    } else {
-        showMoreContent.style.display = 'none'
-    }
-}
+//     if (answerDiv3.style.display == 'none') {
+//         answerDiv3.style.display = 'flex';
+//     } else {
+//         answerDiv3.style.display = 'none';
+//     }
+// }
 
-showMoreButton.addEventListener('click', showMoreQuestionHandler)
-console.log('test')
+// questionSelector3.addEventListener('click', revealAnswerHandler3)
+
+
+// let questionSelector4 = document.getElementById('questionSelector4');
+// let answerDiv4 = document.getElementById('answerDiv4');
+// answerDiv4.style.display = 'none'
+
+// const revealAnswerHandler4 = () => {
+
+//     if (answerDiv4.style.display == 'none') {
+//         answerDiv4.style.display = 'flex';
+//     } else {
+//         answerDiv4.style.display = 'none';
+//     }
+// }
+
+// questionSelector4.addEventListener('click', revealAnswerHandler4)
+
+
+
+// let showMoreButton = document.getElementById('FAQ_showMoreBtn')
+// let showMoreContent = document.getElementById('showMore_content')
+// showMoreContent.style.display ='none'
+
+// const showMoreQuestionHandler = () => {
+//     if (showMoreContent.style.display == 'none') {
+//         showMoreContent.style.display = 'block'
+//     } else {
+//         showMoreContent.style.display = 'none'
+//     }
+// }
+
+// showMoreButton.addEventListener('click', showMoreQuestionHandler)
 
 
 
@@ -187,3 +186,14 @@ console.log('test')
     document.getElementById('adult_counter').innerHTML = adult_counter;
     document.getElementById('children_counter').innerHTML = children_counter;
   }
+
+
+
+
+let item1 = document.getElementById('cat1')
+
+const styleHandler = () => {
+    item1.style.borderTop = '1px solid black'
+}
+
+item1.addEventListener('click', styleHandler)
