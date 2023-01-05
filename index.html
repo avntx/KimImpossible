@@ -8,285 +8,84 @@
     <script src="https://kit.fontawesome.com/7fc7895a6d.js" crossorigin="anonymous"></script>
     <title>Kim Impossible | Home</title>
 </head>
+
+</div>
 <body>
-    <div class="modal_container" id="modalContainer">
-        <p id="modal_btn"><i class="fa-solid fa-xmark"></i></p>
-
-        <!-- Input Content -->
-        <div class="content_container">
-            <div class="input_section">
-                <form action="">
-                    <input type="text" placeholder="Name" required>
-                    <input type="" placeholder="Phone Number" required>
-                    <input type="date" required>
-                </form>
-
-
-                <div class="ticketSelectorContainer">
-                    <p>Number of Tickets</p>
-                    <div class="ticketSelector">
-                        <div class="counterContainer">
-                            <p>Adult</p>
-                            <div class="ticket_counter">
-                                <i class="fa-solid fa-angle-left ticketClicker" onclick="minusAdultHandler()"></i>
-                                <p id="adult_counter"></p>
-                                <i class="fa-solid fa-angle-right ticketClicker" onclick="plusAdultHandler()"></i>
-                            </div>
-                        </div>
-
-                        <div class="counterContainer">
-                            <p>Children</p>
-                            <div class="ticket_counter">
-                                <i class="fa-solid fa-angle-left ticketClicker" onclick="minusChildHandler()"></i>
-                                <p id="children_counter"></p>
-                                <i class="fa-solid fa-angle-right ticketClicker" onclick="plusChildHandler()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="font-size: 14px;">No extra charges for Weekends or Public Holidays</p>
-                </div>
-
-            </div>
-
-            <!-- Calculator -->
-
-            <div class="calculatorContainer">
-                <p style="text-align: center; margin-top: 0.4rem;">Price</p>
-
-                <!-- Header -->
-                <div class="calculatorHeader">
-                    <p>Ticket Type :</p>
-                    <p>Quantity :</p>
-                    <p>Price :</p>
-                </div>
-                <!-- Adult section -->
-                <div class="ticketSection">
-                    <p id="adultType"></p>
-                    <p id="adultTix_num"></p>
-                    <p id="adultTix_price"></p>
-                </div>
-
-                <!-- Children ticket price section -->
-                <div class="ticketSection">
-                    <p id="childType"></p>
-                    <p id="childTix_num"></p>
-                    <p id="childTix_price"></p>
-                </div>
-
-                <!-- Total price section -->
-                <div class="totalPrice_section">
-                    <p style="padding-left: 22px;">Grand Total :</p>
-                    <p id="tixTotalPrice"></p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
 
     <div id="container">
-        <div class="navbar">
+
+
+        <div class="navbar_container">
             <!-- Logo -->
-            <img class="logo" src="assets/main_logo.png" alt="Logo"/>
+            <div class="logo_div">
+                <img class="web_logo" src="assets/main_logo.png" alt="Logo"/>
+            </div>
 
             <!-- Navbar links -->
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="components/Attractions/attractions.html">Attractions</a>
-                <a href="components/ContactUs/contactUs.html">Contact Us</a>
-                <a href="#" id="bookNow_btn">Book Now</a>
+            <div class="navbar_links">
+                <a href="index.html" style="text-decoration: none; color: white;">Home</a>
+                <a href="components/Attractions/attractions.html" style="text-decoration: none; color: white;">Attractions</a>
+                <a href="components/ContactUs/contactUs.html" style="text-decoration: none; color: white;">Contact Us</a>
+                <a href="#" id="bookNow_btn" style="text-decoration: none; color: black; font-weight: bold;">Book Now</a>
             </div>
         </div>
 
-<!-- 
+
         <div id="bgImage_container">
             <img id="main_bgImage" src="assets/front_page.jpg" alt="Theme Park"/>
             <img id="bgImage_logo" src="assets/fp_logo.png" alt="BG Image Logo"/>
-            <h1 class="mainHeader">Largest Theme Park In Singapore</h1>
-        </div> -->
+        </div>
 
 
-        <!-- Display Attractions Section -->
-        <section style="width: 70%; margin: 0rem auto 1.8rem;">
-            <p class="header">Browse our Attractions</p>
-            <p>There is something for everyone!</p>
-            
-            <!-- Main Content -->
-            <div>
-                <!-- Category bar -->
-                <div class="categories">
-                    <p class="individual_category" id="cat1">Family Rides</p>
-                    <p class="individual_category" id="cat2">Wet Activities</p>
-                    <p class="individual_category" id="cat3">Adventures</p>
-                    <p class="individual_category" id="cat4">Relax & Enjoy</p>
+        <div style="margin-bottom: 5rem;">
+            <p class="header">Featured Rides</p>
+
+            <!-- Popular rides section -->
+            <div class="content_container">
+                <div class="individual_section">
+                    <p class="section_title">Bunny Coaster</p>
+                    <img class="ride_image" src="./assets/rollerCoaster.jpg"/>
+                    <p class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <div class="readMore_container">
+                        <a href="#" class="readMore_btn">Read More</a>
+                        <i class="fa-solid fa-angle-right icon"></i>
+                    </div>
                 </div>
 
-                <!-- Attractions -->
-                <div class="attractions_content">
-                    <div>
-                        <img class="attraction_image" src="./assets/attraction1.png"/>
-                        
-                        <!-- Attraction's Description -->
-                        <div style="background-color: #eeeeee; padding: 12px; border-radius: 5px;">
-                            <div>
-                                <p class="title">Crazy Waves Park</p>
-                                <p>Price from: </p>
-                                <p class="price">$29.90</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-
-                            <!-- Read more Button -->
-                            <p class="readMore_btn">Read More</p>
-                        </div>  
+                <div class="individual_section">
+                    <p class="section_title">Bunny Coaster</p>
+                    <img class="ride_image" src="./assets/rollerCoaster.jpg"/>
+                    <p class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <div class="readMore_container">
+                        <a href="#" class="readMore_btn">Read More</a>
+                        <i class="fa-solid fa-angle-right icon"></i>
                     </div>
-                    <div>
-                        <img class="attraction_image" src="./assets/attraction1.png"/>
-                        
-                        <!-- Attraction's Description -->
-                        <div style="background-color: #eeeeee; padding: 12px; border-radius: 5px;">         
-                            <div>
-                                <p class="title">Insane Roller Coaster</p>
-                                <p>Price from: </p>
-                                <p class="price">$29.90</p>
+                </div>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-
-                            <!-- Read more Button -->
-                            <p class="readMore_btn">Read More</p>
-                        </div> 
-                    </div>
-                    <div>
-                        <img class="attraction_image" src="./assets/attraction1.png"/>
-                        
-                        <!-- Attraction's Description -->
-                        <div style="background-color: #eeeeee; padding: 12px; border-radius: 5px;">         
-                            <div>
-                                <p class="title">Chill by the Sea</p>
-                                <p>Price from: </p>
-                                <p class="price">$29.90</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-
-                            <!-- Read more Button -->
-                            <p class="readMore_btn">Read More</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="attraction_image" src="./assets/attraction1.png"/>
-                        
-                        <!-- Attraction's Description -->
-                        <div style="background-color: #eeeeee; padding: 12px; border-radius: 5px;">         
-                            <div>
-                                <p class="title">Garden's Scenery</p>
-                                <p>Price from: </p>
-                                <p class="price">$29.90</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-
-                            <!-- Read more Button -->
-                            <p class="readMore_btn">Read More</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="attraction_image" src="./assets/attraction1.png"/>
-                        
-                        <!-- Attraction's Description -->
-                        <div style="background-color: #eeeeee; padding: 12px; border-radius: 5px;">         
-                            <div>
-                                <p class="title">Garden's Scenery</p>
-                                <p>Price from: </p>
-                                <p class="price">$29.90</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-
-                            <!-- Read more Button -->
-                            <p class="readMore_btn">Read More</p>
-                        </div>
+                <div class="individual_section">
+                    <p class="section_title">Bunny Coaster</p>
+                    <img class="ride_image" src="./assets/rollerCoaster.jpg"/>
+                    <p class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                    <div class="readMore_container">
+                        <a href="#" class="readMore_btn">Read More</a>
+                        <i class="fa-solid fa-angle-right icon"></i>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Backstory about this theme park -->
-        <section style="position: relative;">
-            <img src="./assets/BackstoryBG.png" class="BG_Image"/>
-            <p class="header" style="position: absolute; top: 0; left: 15%;">About Us</p>
-
-            <div class="backstory">
-                <p class="question">Why did we start this park?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua</p>
-
-                <p class="question">The Team</p>
-                <div class="the_team">
-                    <div class="team_member">
-                        <img src="./assets/person3.png" class="profile_picture"/>
-                        <p style="margin: 0.6rem 0rem 0.1rem;">Amelia</p>
-                        <p style="color: rgb(187, 121, 0); font-weight: bold;">Co-Founder</p>
-                    </div>
-                    <div class="team_member">
-                        <img src="./assets/person3.png" class="profile_picture"/>
-                        <p style="margin: 0.6rem 0rem 0.1rem;">James</p>
-                        <p style="color: rgb(187, 121, 0); font-weight: bold;">Co-Founder</p>
-                    </div>
-                    <div class="team_member">
-                        <img src="./assets/person3.png" class="profile_picture"/>
-                        <p style="margin: 0.6rem 0rem 0.1rem;">Lucy</p>
-                        <p style="color: rgb(187, 121, 0); font-weight: bold;">Director</p>
-                    </div>
-                    <div class="team_member">
-                        <img src="./assets/person3.png" class="profile_picture"/>
-                        <p style="margin: 0.6rem 0rem 0.1rem;">Patrick</p>
-                        <p style="color: rgb(187, 121, 0); font-weight: bold;">CTO</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Footer Section -->
-        <section class="footer_container">
-            <div class="footer_upper">
-                <!-- Logo -->
-                <div class="footer_logo">
-                    <img src="./assets/main_logo.png" style="width: 170px; height: 45px;" />
-                    <p>Kim Impossible</p>
-                </div>
-
-                <div class="footer_links">
-                    <a href="#">Home</a>
-                    <a href="#">Attractions</a>
-                    <a href="#">Contact Us</a>
-                </div>
-
-                <!-- Social media -->
-                <div class="footer_socials">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-
-            <p class="copyright">Copyright <i class="fa-regular fa-copyright"></i>  Kim Impossible. All rights reserved</p>
-        </section>
+        </div>
 
         <!-- This is the FAQ section -->
 
-        <!-- <div>
+        <div>
             <p class="header" style="margin-bottom: 1.5rem;">FAQs</p>
 
             <div class="FAQ_section">
@@ -343,12 +142,12 @@
                 </div>
             </div>
             <p id="FAQ_showMoreBtn">Show More</p>
-        </div> -->
+        </div>
 
-<!-- 
+
         <div id="footer">
             <p>This is a footer</p>
-        </div> -->
+        </div>
     </div>
 
     <script src="./script.js"></script>
