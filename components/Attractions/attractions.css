@@ -193,6 +193,9 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+    border-radius: 25px;
+    padding: 20px;
+    background-color:  rgb(34, 34, 34);
 }
 
 .individualSection p {
@@ -367,3 +370,12 @@ body {
     border-top: 2px solid black;
 }
 
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
