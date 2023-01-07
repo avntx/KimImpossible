@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     padding-top: 2.5rem;
     align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .logo_div {
@@ -40,6 +41,7 @@ body {
     padding: 12px;
     background-color: orange;
     border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .modal_container {
@@ -211,6 +213,8 @@ body {
     text-align: center;
     color: white;
     margin-top: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .container {
@@ -252,6 +256,7 @@ body {
     color: white;
     font-size: 16px;
     padding-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .contact_form form textarea {

@@ -3,6 +3,7 @@
 
 body {
     background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .logo {
@@ -32,6 +33,7 @@ body {
     justify-content: space-between;
     padding-top: 2.5rem;
     align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .logo_div {
@@ -55,6 +57,7 @@ body {
     padding: 12px;
     background-color: orange;
     border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #bgImage_container {
@@ -87,6 +90,7 @@ body {
     background-color: rgb(34, 34, 34);
     height: 100px;
     border-radius: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -99,6 +103,7 @@ body {
     justify-content: space-between;
     max-width: 1450px;
     margin-bottom: 3.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .individual_section {
@@ -108,6 +113,7 @@ body {
     border-radius: 25px;
     padding: 20px;
     background-color:  rgb(34, 34, 34);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -115,6 +121,7 @@ body {
     font-size: 20px;
     margin-bottom: 0.4rem;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .ride_image {
@@ -138,6 +145,7 @@ body {
     color: white;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .readMore_container:hover .icon{
@@ -151,6 +159,7 @@ body {
     text-align: center;
     color: white;
     text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .icon {
@@ -165,6 +174,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .question_div {
@@ -177,6 +187,7 @@ body {
     border-color: rgb(112, 212, 35);
     margin-top: 1.2rem;
     cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .question {
@@ -191,6 +202,7 @@ body {
     border-radius: 25px;
     padding: 20px;
     background-color: rgb(34, 34, 34);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #FAQ_showMoreBtn {
@@ -203,6 +215,7 @@ body {
     margin-top: 1.8rem;
     color: rgb(112, 212, 35);
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #footer {
@@ -214,6 +227,7 @@ body {
     background-color: rgb(112, 212, 35);
     text-align: center;
     margin-top: 5rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
