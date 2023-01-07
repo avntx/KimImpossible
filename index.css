@@ -1,5 +1,4 @@
 
-*
 
 body {
     background-color: black;
@@ -17,7 +16,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
 }
 
 #container {
@@ -51,6 +49,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #bookNow_btn {
@@ -235,6 +234,165 @@ body {
     text-align: center;
     color: white;
   }
+
+  .modal_container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+#modal_btn {
+    color: white;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+
+.content_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1px auto;
+    color: white;
+    margin-top: 0.8rem;
+    font-size: 18px;
+}
+
+.input_section {
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input_section form {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 131px;
+}
+
+.input_section form input {
+    border: none;
+    outline: none;
+    background-color: #3b3b3bbf;
+    height: 40px;
+    border-radius: 5px;
+    color: rgb(180, 180, 180);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.ticketSelectorContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticketSelector {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.ticket_counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+
+.ticketClicker {
+    padding: 6px;
+    border-radius: 2px;
+    background-color: orange;
+}
+
+#adult_counter {
+    font-size: 18px;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+#children_counter {
+    font-size: 18px;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.calculatorContainer {
+    width: 50%;
+    height: 50vh;
+    background-color: #3b3b3bbf;
+    border-radius: 10px;
+}
+
+.calculatorHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 0.6rem;
+}
+
+.ticketSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 20px;
+}
+
+.totalPrice_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20px;
+    align-items: center;
+    margin-top: 60%;
+    padding-top: 5%;
+    border-top: 2px solid black;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 
 
   /* Bottom left text */
