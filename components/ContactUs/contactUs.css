@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+
 body {
     background-color: black;
+    font-family: Rubik, sans-serif;
 }
+
 
 *{
     margin: 0;
@@ -17,7 +21,7 @@ body {
     justify-content: space-between;
     padding-top: 2.5rem;
     align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Rubik, sans-serif;
 }
 
 .logo_div {
@@ -41,8 +45,9 @@ body {
     padding: 12px;
     background-color: orange;
     border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Rubik, sans-serif;
 }
+
 
 .modal_container {
     display: none;
@@ -213,7 +218,7 @@ body {
     text-align: center;
     color: white;
     margin-top: 2rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Rubik, sans-serif;
 
 }
 
@@ -256,7 +261,7 @@ body {
     color: white;
     font-size: 16px;
     padding-left: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Rubik, sans-serif;
 }
 
 .contact_form form textarea {

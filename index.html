@@ -12,81 +12,80 @@
 
 </div>
 <body>
+    <div class="modal_container" id="modalContainer">
+        <p id="modal_btn"><i class="fa-solid fa-xmark"></i></p>
 
-    <div id="container">
-        <div class="modal_container" id="modalContainer">
-            <p id="modal_btn"><i class="fa-solid fa-xmark"></i></p>
-    
-            <!-- Input Content -->
-            <div class="content_container">
-                <div class="input_section">
-                    <form action="">
-                        <input type="text" placeholder="Name" required>
-                        <input type="" placeholder="Phone Number" required>
-                        <input type="date" required>
-                    </form>
-    
-    
-                    <div class="ticketSelectorContainer">
-                        <p>Number of Tickets</p>
-                        <div class="ticketSelector">
-                            <div class="counterContainer">
-                                <p>Adult</p>
-                                <div class="ticket_counter">
-                                    <i class="fa-solid fa-angle-left ticketClicker" onclick="minusAdultHandler()"></i>
-                                    <p id="adult_counter"></p>
-                                    <i class="fa-solid fa-angle-right ticketClicker" onclick="plusAdultHandler()"></i>
-                                </div>
-                            </div>
-    
-                            <div class="counterContainer">
-                                <p>Children</p>
-                                <div class="ticket_counter">
-                                    <i class="fa-solid fa-angle-left ticketClicker" onclick="minusChildHandler()"></i>
-                                    <p id="children_counter"></p>
-                                    <i class="fa-solid fa-angle-right ticketClicker" onclick="plusChildHandler()"></i>
-                                </div>
+        <!-- Input Content -->
+        <div class="content_container">
+            <div class="input_section">
+                <form action="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="" placeholder="Phone Number" required>
+                    <input type="date" required>
+                </form>
+
+
+                <div class="ticketSelectorContainer">
+                    <p>Number of Tickets</p>
+                    <div class="ticketSelector">
+                        <div class="counterContainer">
+                            <p>Adult</p>
+                            <div class="ticket_counter">
+                                <i class="fa-solid fa-angle-left ticketClicker" onclick="minusAdultHandler()"></i>
+                                <p id="adult_counter"></p>
+                                <i class="fa-solid fa-angle-right ticketClicker" onclick="plusAdultHandler()"></i>
                             </div>
                         </div>
-                        <p style="font-size: 14px;">No extra charges for Weekends or Public Holidays</p>
+
+                        <div class="counterContainer">
+                            <p>Children</p>
+                            <div class="ticket_counter">
+                                <i class="fa-solid fa-angle-left ticketClicker" onclick="minusChildHandler()"></i>
+                                <p id="children_counter"></p>
+                                <i class="fa-solid fa-angle-right ticketClicker" onclick="plusChildHandler()"></i>
+                            </div>
+                        </div>
                     </div>
-    
+                    <p style="font-size: 14px;">No extra charges for Weekends or Public Holidays</p>
                 </div>
-    
-                <!-- Calculator -->
-    
-                <div class="calculatorContainer">
-                    <p style="text-align: center; margin-top: 0.4rem;">Price</p>
-    
-                    <!-- Header -->
-                    <div class="calculatorHeader">
-                        <p>Ticket Type :</p>
-                        <p>Quantity :</p>
-                        <p>Price :</p>
-                    </div>
-                    <!-- Adult section -->
-                    <div class="ticketSection">
-                        <p id="adultType"></p>
-                        <p id="adultTix_num"></p>
-                        <p id="adultTix_price"></p>
-                    </div>
-    
-                    <!-- Children ticket price section -->
-                    <div class="ticketSection">
-                        <p id="childType"></p>
-                        <p id="childTix_num"></p>
-                        <p id="childTix_price"></p>
-                    </div>
-    
-                    <!-- Total price section -->
-                    <div class="totalPrice_section">
-                        <p style="padding-left: 22px;">Grand Total :</p>
-                        <p id="tixTotalPrice"></p>
-                    </div>
-                </div>
-    
+
             </div>
+
+            <!-- Calculator -->
+
+            <div class="calculatorContainer">
+                <p style="text-align: center; margin-top: 0.4rem;">Price</p>
+
+                <!-- Header -->
+                <div class="calculatorHeader">
+                    <p>Ticket Type :</p>
+                    <p>Quantity :</p>
+                    <p>Price :</p>
+                </div>
+                <!-- Adult section -->
+                <div class="ticketSection">
+                    <p id="adultType"></p>
+                    <p id="adultTix_num"></p>
+                    <p id="adultTix_price"></p>
+                </div>
+
+                <!-- Children ticket price section -->
+                <div class="ticketSection">
+                    <p id="childType"></p>
+                    <p id="childTix_num"></p>
+                    <p id="childTix_price"></p>
+                </div>
+
+                <!-- Total price section -->
+                <div class="totalPrice_section">
+                    <p style="padding-left: 22px;">Grand Total :</p>
+                    <p id="tixTotalPrice"></p>
+                </div>
+            </div>
+
         </div>
+    </div>
+
 
         <div class="navbar_container">
             <!-- Logo -->
@@ -99,16 +98,19 @@
                 <a href="index.html" style="text-decoration: none; color: white;">Home</a>
                 <a href="components/Attractions/attractions.html" style="text-decoration: none; color: white;">Attractions</a>
                 <a href="components/ContactUs/contactUs.html" style="text-decoration: none; color: white;">Contact Us</a>
+                <a href="components\Tickets\tickets.html" style="text-decoration: none; color: white;">Tickets</a>
                 <a href="#" id="bookNow_btn" style="text-decoration: none; color: black; font-weight: bold;">Book Now</a>
             </div>
         </div>
 
-
-        <div id="bgImage_container">
-            <img id="main_bgImage" src="assets/front_page.jpg" alt="Theme Park"/>
-            <img id="bgImage_logo" src="assets/fp_logo.png" alt="BG Image Logo"/>
-        </div>
-
+        <section class="hero">
+            <div class="title-group">
+                <div id="bgImage_container"></div>
+                <img id="bgImage_logo" src="assets/fp_logo.png" alt="BG Image Logo"/>
+            </div>
+                <h1>Welcome to The Largest Theme Park In Singapore</h1>
+            </div>
+        </section>
 
         <div style="margin-bottom: 5rem;">
             <p class="header">Featured Rides</p>
@@ -118,7 +120,7 @@
                 <div class="individual_section">
                     <p class="section_title">Doggy Coaster</p>
                     <img class="ride_image" src="./assets/attraction1.png"/>
-                    <p class="section_description">Take a ride if you dare on this coaster. Although it looks innocent enough, the screams from the top of the ride say otherwise! Eliciting screams from the passengers as the coaster seems to go off the track before whipping rapidly around. Sudden drops and bunny hops add to the thrills--it'll make you want to "Blast Off!”
+                    <p class="section_description">Take a ride if you dare on this coaster. Although it looks innocent enough, the screams from the top of the ride say otherwise! 
                     </p>
                     <div class="readMore_container">
                         <a href="components/Attractions/attractions.html" class="readMore_btn">Read More</a>
@@ -217,6 +219,7 @@
         </div>
     </div>
 
+</body>
     <script src="script.js"></script>
 </body>
 </html>

@@ -86,12 +86,12 @@ let page = document.getElementById('container')
 
 const displayModal = () => {
     modalContainer.style.display = 'flex'
-    page.style.opacity = '1'
+    page.style.opacity = '0.2'
 }
 
 const closeModal = () => {
     modalContainer.style.display = 'None'
-    page.style.opacity = '1'
+    page.style.opacity = '0.2'
 }
 
 bookNow_btn.addEventListener('click', displayModal)
